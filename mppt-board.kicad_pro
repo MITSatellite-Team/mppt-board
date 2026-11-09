@@ -140,9 +140,9 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.15,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.4,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -152,10 +152,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_through_hole_diameter": 0.2,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -172,6 +172,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -183,6 +184,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -194,6 +196,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -240,7 +243,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "A"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -469,6 +472,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -506,19 +510,153 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.25,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "HighCurrent",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "tuning_profile": "",
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.2,
         "wire_width": 6
       }
     ],
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "net_colors": {},
+    "netclass_assignments": {},
+    "netclass_patterns": [
+      {
+        "netclass": "HighCurrent",
+        "pattern": "VCC_SOLAR"
+      },
+      {
+        "netclass": "HighCurrent",
+        "pattern": "/Solar_Input/SOLAR_F"
+      },
+      {
+        "netclass": "HighCurrent",
+        "pattern": "/CHG_VIN"
+      },
+      {
+        "netclass": "HighCurrent",
+        "pattern": "/Charger/CHG_SW"
+      },
+      {
+        "netclass": "HighCurrent",
+        "pattern": "/Charger/CHG_SENSE"
+      },
+      {
+        "netclass": "HighCurrent",
+        "pattern": "/CHG_BAT"
+      },
+      {
+        "netclass": "HighCurrent",
+        "pattern": "VBAT"
+      },
+      {
+        "netclass": "HighCurrent",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "STM_VDDA"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Supply_3V3/TPS_VOUT"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Supply_3V3/SW1_3V3"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Supply_3V3/SW2_3V3"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Charger/CHG_BOOST"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VUSB"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Supply_3V3/TPS_VIN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB_UART/USB_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB_UART/USB_DM"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -661,13 +799,37 @@
         "uuid": "bce0fa24-9bff-441e-bdf9-d37fd2382ff9"
       }
     ],
-    "used_designators": "CN1,U1-7,TP1-6,R1-18,C1-28,D1-2,Q1-2,#PWR1-55,SW1-3,L1-3,CR1",
+    "used_designators": "#PWR1-55,#PWR159-163,#PWR169,C1-28,CN1,CR1,D1-2,L1-3,Q1-2,R1-18,SW1-3,TP1-6,U1-7",
     "variants": []
   },
   "sheets": [
     [
       "bce0fa24-9bff-441e-bdf9-d37fd2382ff9",
       "Root"
+    ],
+    [
+      "a358ecfc-c155-4428-800e-f1a3122c2da7",
+      "Solar_Input"
+    ],
+    [
+      "36f93c30-2a49-4e96-866a-8c4d3822e0ba",
+      "Charger"
+    ],
+    [
+      "0704ec08-7c14-437f-a9b3-e9c8f5f0ea10",
+      "Battery_Output"
+    ],
+    [
+      "56c9a617-eea0-4e19-bbf4-0bc67e9a94e1",
+      "Supply_3V3"
+    ],
+    [
+      "c4c52fa6-d29f-412c-8d7b-57aff5d81cc4",
+      "USB_UART"
+    ],
+    [
+      "355ae39e-7396-4a8a-b1eb-6f72fe1df755",
+      "MCU"
     ]
   ],
   "text_variables": {},
