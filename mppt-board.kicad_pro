@@ -553,25 +553,6 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.15,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "USB",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2147483647,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "tuning_profile": "",
-        "via_diameter": 0.45,
-        "via_drill": 0.2,
-        "wire_width": 6
       }
     ],
     "meta": {
@@ -626,35 +607,19 @@
       },
       {
         "netclass": "Power",
-        "pattern": "/Supply_3V3/TPS_VOUT"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/Supply_3V3/SW1_3V3"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/Supply_3V3/SW2_3V3"
-      },
-      {
-        "netclass": "Power",
         "pattern": "/Charger/CHG_BOOST"
       },
       {
         "netclass": "Power",
-        "pattern": "VUSB"
+        "pattern": "/Supply_3V3/VIN_3V3"
       },
       {
         "netclass": "Power",
-        "pattern": "/Supply_3V3/TPS_VIN"
+        "pattern": "/Supply_3V3/VOUT_3V3"
       },
       {
-        "netclass": "USB",
-        "pattern": "/USB_UART/USB_DP"
-      },
-      {
-        "netclass": "USB",
-        "pattern": "/USB_UART/USB_DM"
+        "netclass": "Power",
+        "pattern": "/Supply_3V3/SW_3V3"
       }
     ]
   },
@@ -822,10 +787,6 @@
     [
       "56c9a617-eea0-4e19-bbf4-0bc67e9a94e1",
       "Supply_3V3"
-    ],
-    [
-      "c4c52fa6-d29f-412c-8d7b-57aff5d81cc4",
-      "USB_UART"
     ],
     [
       "355ae39e-7396-4a8a-b1eb-6f72fe1df755",

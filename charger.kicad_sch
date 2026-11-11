@@ -9882,30 +9882,6 @@
 		)
 		(uuid "130eb61c-0a21-4848-8bb4-11e1df01cfbc")
 	)
-	(text "STATUS (OPEN COLLECTOR) -> MCU"
-		(exclude_from_sim no)
-		(at 129.286 151.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "5b7ab513-b13a-4f3f-868f-1860768b3950")
-	)
-	(text "ENABLE: ON BY DEFAULT, MCU / JUMPER CAN TURN OFF"
-		(exclude_from_sim no)
-		(at 131.064 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "a6a5f590-3ac7-48e8-9549-2445e2b0213c")
-	)
 	(text "Panel set-point (VIN_REG):  Vset = 2.7*(1+R7/R9) + R7*(2.7-Vdac)/R10.   DAC 0V/unpowered -> 20.9V,  hi-Z -> 14.4V,  3.3V -> 12.9V."
 		(exclude_from_sim no)
 		(at 30.48 228.6 0)
@@ -9929,32 +9905,9 @@
 		)
 		(uuid "d59f16f8-9e4a-4ba5-8efb-b4cf8e080c98")
 	)
-	(text "OUTPUT DECOUPLING"
+	(text "Float: 3.3V*(1+R24/R25) = 8.32 V."
 		(exclude_from_sim no)
-		(at 305.054 203.454 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "d7d419f4-3caa-4279-a28e-1d7f1721f3ab")
-	)
-	(text "Enable: R11 holds SHDN high (charging ON by default). Q1 (PA3 high) or the J2 jumper (via D1) turn it off. Remove R12 to take the MCU out of the loop."
-		(exclude_from_sim no)
-		(at 30.226 236.982 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e675fd19-a400-47db-ab95-3af20813542a")
-	)
-	(text "Charge current: R26 = 0.4R -> 0.1V/0.4R = 250 mA.   Float: 3.3V*(1+R24/R25) = 8.32 V."
-		(exclude_from_sim no)
-		(at 30.48 233.68 0)
+		(at 30.226 231.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9963,7 +9916,7 @@
 		)
 		(uuid "eec4455a-92f0-424d-83bd-304f0061496b")
 	)
-	(text "BATTERY OUTPUT, FLOAT 8.32 V"
+	(text "FLOAT 8.32 V"
 		(exclude_from_sim no)
 		(at 306.578 149.606 0)
 		(effects
@@ -9974,18 +9927,6 @@
 			(justify left bottom)
 		)
 		(uuid "fbfbbb70-4887-4fc0-9ce3-040fa538b078")
-	)
-	(text "BUCK POWER STAGE, 1 MHZ"
-		(exclude_from_sim no)
-		(at 236.474 94.742 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "fdce014c-ddde-4326-b62b-b0eb9fb3bd5e")
 	)
 	(junction
 		(at 261.62 96.52)

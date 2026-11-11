@@ -11,7 +11,7 @@
 		(comment 1 "Top level: block diagram")
 	)
 	(lib_symbols)
-	(text "3.3 V buck-boost (runs from the battery or USB)"
+	(text "3.3 V buck (runs from the battery)"
 		(exclude_from_sim no)
 		(at 299.72 200.08 0)
 		(effects
@@ -65,27 +65,6 @@
 			(justify left bottom)
 		)
 		(uuid "77d2022c-76b6-407f-8302-6756c08b0585")
-	)
-	(text "USB-C: CH340C USB-UART, auto-program (BOOT0/NRST) & 5 V input"
-		(exclude_from_sim no)
-		(at 44.45 200.08 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "9f70d2ec-4186-4803-bf7b-1f62ec27d8f9")
-	)
-	(wire
-		(pts
-			(xy 160.02 182.88) (xy 154.94 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04b7dc0d-4f60-42af-ae20-513e426bd36a")
 	)
 	(wire
 		(pts
@@ -259,26 +238,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 203.2) (xy 220.98 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "992d57c6-9adc-4adc-9be8-d76e941fa6b7")
-	)
-	(wire
-		(pts
-			(xy 90.17 177.8) (xy 95.25 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a8b1cca-ec76-45c9-b783-a647deccb635")
-	)
-	(wire
-		(pts
 			(xy 215.9 193.04) (xy 220.98 193.04)
 		)
 		(stroke
@@ -296,36 +255,6 @@
 			(type default)
 		)
 		(uuid "b4fda843-6df3-42de-90bf-ecc812c54b1f")
-	)
-	(wire
-		(pts
-			(xy 90.17 187.96) (xy 95.25 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5f40371-941e-4f9e-b740-738f0810f48c")
-	)
-	(wire
-		(pts
-			(xy 90.17 182.88) (xy 95.25 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db078a7f-fb02-478e-920a-2ba46529228d")
-	)
-	(wire
-		(pts
-			(xy 215.9 172.72) (xy 220.98 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e82b3b77-a5c2-41bc-b9bf-4f2d43b3ed0b")
 	)
 	(wire
 		(pts
@@ -377,26 +306,6 @@
 		)
 		(uuid "f77db500-d90a-466f-a035-a6ca4ac5ffc7")
 	)
-	(wire
-		(pts
-			(xy 44.45 177.8) (xy 39.37 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe131ac0-d200-46ad-8da9-fac3d34c796e")
-	)
-	(wire
-		(pts
-			(xy 215.9 198.12) (xy 220.98 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe8b1c80-457f-416b-8d41-d2a1c7186e75")
-	)
 	(label "~{CHG_FAULT}"
 		(at 154.94 193.04 180)
 		(effects
@@ -416,16 +325,6 @@
 			(justify left bottom)
 		)
 		(uuid "08f7474a-aab4-476c-9510-90f9dc769319")
-	)
-	(label "UART_TX"
-		(at 39.37 177.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "11c2a5c0-0f6c-4fbc-9767-be547351f0a2")
 	)
 	(label "I2C_SCL"
 		(at 360.68 68.58 0)
@@ -537,16 +436,6 @@
 		)
 		(uuid "7664dec5-9a54-4821-bc7f-634062cd9b08")
 	)
-	(label "BOOT0"
-		(at 95.25 177.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "79b12fd2-bb5d-499e-8023-876e5d873d8d")
-	)
 	(label "CHG_DIS"
 		(at 220.98 177.8 0)
 		(effects
@@ -566,46 +455,6 @@
 			(justify left bottom)
 		)
 		(uuid "a248ec9f-bdc2-4375-9060-789138a2c6b8")
-	)
-	(label "BOOT0"
-		(at 220.98 172.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b009e554-c7f4-411a-b64d-7e64d9db110e")
-	)
-	(label "NRST"
-		(at 220.98 198.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b8a84d62-b85e-46b1-8177-25e8090c452e")
-	)
-	(label "UART_RX"
-		(at 95.25 187.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bd7928bd-8b6f-4c9e-a456-2b935b0a6b66")
-	)
-	(label "UART_TX"
-		(at 220.98 203.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c190cb48-47cc-437f-ad5d-3946a3041a25")
 	)
 	(label "~{CHG_CHRG}"
 		(at 154.94 187.96 180)
@@ -667,16 +516,6 @@
 		)
 		(uuid "dd29dd8e-4788-4ce1-ab79-96a115842a81")
 	)
-	(label "NRST"
-		(at 95.25 182.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e10fac73-8e58-4f47-a79e-ab43951d8ab5")
-	)
 	(label "I2C_SDA"
 		(at 360.68 73.66 0)
 		(effects
@@ -696,16 +535,6 @@
 			(justify right bottom)
 		)
 		(uuid "f6658482-8df7-414d-aaf9-2da4c432ed8c")
-	)
-	(label "UART_RX"
-		(at 154.94 182.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f973d8a4-756b-46f1-b1a7-0d39f78efe8b")
 	)
 	(label "I2C_SDA"
 		(at 220.98 187.96 0)
@@ -863,16 +692,6 @@
 				(justify left)
 			)
 		)
-		(pin "UART_RX" input
-			(at 160.02 182.88 180)
-			(uuid "cde202e4-123d-4348-a6a7-69f24abeee9f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "~{CHG_CHRG}" input
 			(at 160.02 187.96 180)
 			(uuid "5d26ca48-1701-4eee-8e99-61754cac45e9")
@@ -891,16 +710,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "BOOT0" bidirectional
-			(at 215.9 172.72 0)
-			(uuid "6b0130c5-a5a4-485d-8d7d-13ee6655f7a0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "CHG_DIS" output
@@ -936,26 +745,6 @@
 		(pin "MPPT_DAC" output
 			(at 215.9 193.04 0)
 			(uuid "39ea6851-a29e-4f8b-bc22-b8257e21781c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "NRST" bidirectional
-			(at 215.9 198.12 0)
-			(uuid "9b2437c3-5ed2-4fa4-897f-3000e8aba3a3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "UART_TX" output
-			(at 215.9 203.2 0)
-			(uuid "8cd03f54-5209-4a2e-90fe-b5348101c8d8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1228,93 +1017,6 @@
 			(project "mppt-board"
 				(path "/bce0fa24-9bff-441e-bdf9-d37fd2382ff9"
 					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 44.45 170.18)
-		(size 45.72 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "c4c52fa6-d29f-412c-8d7b-57aff5d81cc4")
-		(property "Sheetname" "USB_UART"
-			(at 44.45 169.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.5 1.5)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "usb_uart.kicad_sch"
-			(at 44.45 196.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "UART_TX" input
-			(at 44.45 177.8 180)
-			(uuid "ea36cbdf-4886-46b3-b4d0-1e12487a386d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "BOOT0" bidirectional
-			(at 90.17 177.8 0)
-			(uuid "f594e11b-f0d5-4bdd-a4d8-dee23646aba9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "NRST" bidirectional
-			(at 90.17 182.88 0)
-			(uuid "54f1149d-684a-4446-a3a9-030a2823d17a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "UART_RX" output
-			(at 90.17 187.96 0)
-			(uuid "ce30f648-fe01-492c-b621-f8565d7269e0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "mppt-board"
-				(path "/bce0fa24-9bff-441e-bdf9-d37fd2382ff9"
-					(page "6")
 				)
 			)
 		)
