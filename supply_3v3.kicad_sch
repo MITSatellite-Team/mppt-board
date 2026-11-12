@@ -12415,7 +12415,7 @@
 				)
 			)
 		)
-		(property "Description" "AP63203 buck inductor (datasheet Table 2: 3.9 uH); 2.1 A sat, 74 mR"
+		(property "Description" "AP63203 buck inductor (datasheet Table 2: 3.9 uH); 3 A sat, 2.1 A rated, 74 mR"
 			(at 90.17 83.82 0)
 			(hide yes)
 			(show_name no)
